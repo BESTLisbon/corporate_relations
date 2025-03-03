@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./src/input.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/kalam" rel="stylesheet">
+    
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Script -->
+    <script src="./js/button_events.js"></script>
+
+    <title>Relações Empresariais</title>
+    <link rel="icon" type="image/x-icon" href="./images/logos/favicon.ico">
+</head>
+
+<body class="text-white" style="background-color: #052720;">
+    <!-- Navigation Bar and Side Bar -->
+    <nav>
+        <div class="max-w-7xl  mx-auto lg:my-7 my-2 text-xl font-semibold">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="./index.html"><img class="w-36" src="./images/logos/best_lisbon.png" alt="" /></a>
+                </div>
+                <div class="hidden lg:flex space-x-12 items-center">
+                    <div class="hover:text-gray-200 border-b-4 rounded-b-sm border-white hover:border-gray-200">
+                        <a href="./pt_index.html">Introdução</a>
+                    </div>
+                    <div class="hover:text-gray-200">
+                        <a href="#about">Sobre o BEE</a>
+                    </div>
+                    <div class="hover:text-gray-200">
+                        <a href="#packages">Pacotes</a>
+                    </div>
+                    <div class="hover:text-gray-200">
+                        <a href="#our-team">Equipas</a>
+                    </div>
+                    <div class="">
+                        <button
+                            class="bg-white rounded-md py-1 px-3 hover:scale-105 transition-transform text-emerald-500 flex items-center space-x-2"
+                            href="./pt_index.html" onclick="toggleDropdown()">
+                            <p class="font-semibold">Os nossos eventos</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-emerald-500"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    cdivp-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="absolute bg-white rounded-md hidden flex-col items-center gap-y-5 w-44 py-3 mt-2 shadow-md"
+                            id="dropdown">
+                            <a href="BEEpt.html" class="flex-none">
+                                <img src="./images/logos/logoinicialbee.png" alt="bee lisbon"
+                                    class="w-33 hover:scale-105 transition-transform" />
+                            </a>
+                            <a href="BCSpt.html" class="flex-none">
+                                <img src="./images/logos/courses.png" alt="best courses"
+                                    class="w-28 hover:scale-105 transition-transform" />
+                            </a>
+                            <a href="BIVpt.html" class="flex-none">
+                                <img src="./images/logos/BIV_newlogo_blue.png" alt="best inside view"
+                                    class="w-16 hover:scale-105 transition-transform" />
+                            </a>
+                            <a href="BITEpt.html" class="flex-none">
+                                <img src="./images/logos/logo_bite.png" alt="BITE"
+                                    class="w-40 hover:scale-90 transition-transform" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hover:scale-105 transition-transform">
+                        <a href="./BEE.html"><img class="w-10 rounded-sm" src="./images/flags/eng_flag.png"
+                                alt="" /></a>
+                    </div>
+                </div>
+                <!--Mobile Button-->
+                <div class="lg:hidden hover:scale-105 transition-transform" onclick="toggleSideBar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-white ml-20" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!--SideBar-->
+        <div id="sidebar"
+            class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200">
+            <div class="duration-100">
+                <img src="./images/logos/best_lisbon_green.png" alt="best" class="w-36 mx-7 lg:my-14 my-9" />
+
+                <ul class="text-emerald-500 font-semibold text-2xl ml-8">
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="./pt_index.html">Introdução</a>
+                    </li>
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="#about"> Sobre os BEE</a>
+                    </li>
+                    <li class="mb-8 px-3 hover:text-green-500">
+                      <a href="#packages">Pacotes</a>
+                  </li>
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="#our-team">Equipa</a>
+                    </li>
+                    <li class="">
+                        <button
+                            class="bg-emerald-500 rounded-md py-1 px-3 hover:scale-105 transition-transform w-52 text-white flex items-center space-x-2"
+                             onclick="toggleDropdownSide()">
+                            <p class="font-semibold">Os nosso eventos</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-white" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    cdivp-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <div class="absolute border-4 border-emerald-500 rounded-md hidden flex-col items-center gap-y-5 w-52 py-3 mt-2 shadow-md"
+                            id="dropdownside">
+                            <a href="BEEpt.html" class="flex-none">
+                                <img src="./images/logos/logo_bee.png" alt="bee lisbon"
+                                    class="w-33 hover:scale-105 transition-transform" />
+                            </a>
+                            <a href="BCSpt.html" class="flex-none">
+                                <img src="./images/logos/courses.png" alt="best courses"
+                                    class="w-28 hover:scale-105 transition-transform" />
+                            </a>
+                            <a href="BIVpt.html" class="flex-none">
+                                <img src="./images/logos/BIV_newlogo_blue.png" alt="best inside view"
+                                    class="w-16 hover:scale-105 transition-transform" />
+                            </a>
+                            <a href="BITEpt.html" class="flex-none">
+                                <img style="width:40vw"  src="./images/logos/logo_bite.png" alt="best inside view"
+                                    class="w-16 hover:scale-105 transition-transform" />
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Flag -->
+                <div class="hover:scale-105 transition-transform bottom-10 left-9 absolute">
+                    <a href="./BEE.html"><img class="w-10 rounded-sm" src="./images/flags/eng_flag.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--MAIN-->
+
+    <main>
+      <div class= "container-fluid elipsebiv text-white" style="background-color: #063229;">
+        <div class="wide-screen-only" style="height: 20vh;"> </div>
+        <div class="mobile-only" style="height: 5vh;"> </div>
+
+        <b class="wide-screen-only" style="margin-left: 10%; margin-right: 10% ;margin-top: -2%; font-size: 50pt;"  > BEST ENTREPRENEURSHIP</b> 
+        <b class="wide-screen-only" style="margin-left: 10%; margin-right: 10% ;margin-top: -2%; font-size: 50pt;"  >EXPERIENCE</b> 
+        <b class="mobile-only" style="margin-left: 5%; margin-top: -2%; font-size: 17pt; text-align: center;"  > BEST ENTREPRENEURSHIP</b> 
+        <b class="mobile-only" style="margin-left: 5%; margin-top: -2%; font-size: 17pt; text-align: center;"  > EXPERIENCE</b> 
+
+        <h1 class="wide-screen-only" style="margin-left: 10%; margin-top: -2%; font-size: 45pt;" > O que é o BEE?</h1> 
+        <h1 class="mobile-only"  style=" margin-top: -2%; font-size: 17pt; text-align: center;" > O que é o BEE?</h1> 
+
+        <div class="wide-screen-only" style="margin-left: 75%; margin-right: 10%;">
+            <img src="./images/logos/BEE Branco.png" >
+        </div>
+
+        <h2 class="wide-screen-only" style="margin-top: 2%; font-size: 15pt; text-align: justify; margin-inline: 10%;" > A BEST Entrepreneurship Experience 
+          é um evento que reúne estudantes de toda a Universidade de Lisboa que desejam desenvolver as suas competências empreendedoras,
+           trabalhando numa ideia de negócio que responda a um desafio atual. Este evento ocorre no início de maio e já teve duas edições de sucesso em 2023 e 2024. </h2> 
+
+
+
+        <h2 class="mobile-only" style="margin-top: 2%; font-size: 15pt; text-align: justify; margin-inline: 10%; font-size:10pt;" >A BEST Entrepreneurship Experience 
+          é um evento que reúne estudantes de toda a Universidade de Lisboa que desejam desenvolver as suas competências empreendedoras,
+           trabalhando numa ideia de negócio que responda a um desafio atual. Este evento ocorre no início de maio e já teve duas edições de sucesso em 2023 e 2024. </h2> 
+
+        
+
+
+        
+      <!-- Photo Carousel Section -->
+      <div id="photo-carousel">
+        <div class="carousel-container-photos" style="margin-top: 7vh;">
+          <div class="cards-wrapper-photos">
+            <div class="photo-card">
+              <div class="photo-background">
+                <div class="image-content">
+                  <img class="rounded-image" src="./images/BEE/FotoBEE3.png" alt="Photo 1">
+                </div>
+              </div>
+            </div>
+            <div class="photo-card">
+              <div class="photo-background">
+                <div class="image-content">
+                  <img class="rounded-image" src="./images/BEE/FotoBEE1.png" alt="Photo 2">
+                </div>
+              </div>
+            </div>
+            <div class="photo-card">
+              <div class="photo-background">
+                <div class="image-content">
+                  <img class="rounded-image" src="./images/BEE/FotoBEE4.png" alt="Photo 3">
+                </div>
+              </div>
+            </div>
+            <div class="photo-card">
+              <div class="photo-background">
+                <div class="image-content">
+                  <img class="rounded-image" src="./images/BEE/FotoBEE2.png" alt="Photo 4">
+                </div>
+              </div>
+            </div>
+            <div class="photo-card">
+              <div class="photo-background">
+                <div class="image-content">
+                  <img class="rounded-image" src="./images/BEE/FotoBEE5.png" alt="Photo 5">
+                </div>
+              </div>
+            </div>
+            <div class="photo-card">
+              <div class="photo-background">
+                <div class="image-content">
+                  <img class="rounded-image" src="./images/BEE/FotoBEE6.png" alt="Photo 5">
+                </div>
+              </div>
+            </div>
+            <!-- Add more photo cards as needed -->
+          </div>
+        </div>
+      </div>
+
+    <div  style="height:7vh; "> </div>
+  </div>           
+</div>
+
+
+
+<!-- About This Event Section - How Does It Work -->
+<div id="about-this-event">
+  <div class="container">
+    <div class="text-content" style="font-size: 20pt; color: rgba(6, 50, 41, 1); font-weight: 800; text-align: center;">
+      <b>É MAIS DO QUE UMA COMPETIÇÃO!</b>
+      <h2 class="wide-screen-only" style="margin-top:2%; margin-bottom: 5%; color: rgba(6, 50, 41, 1); font-weight: 300; font-size: 15pt; margin-right: 7%; text-align: justify;">
+        Através de uma série de workshops e da resolução de um Case Study, os participantes irão adquirir competências valiosas relacionadas com o empreendedorismo, a inovação e como levar um produto ao mercado.
+        <br><br>
+        É mais do que uma competição - é uma experiência imersiva de um dia inteiro que inclui oportunidades de networking, sessões de mentoria com especialistas da indústria e a oportunidade de conhecer pessoas com interesses semelhantes, desenvolver competências profissionais e ganhar experiência prática no mundo do empreendedorismo.</h2>
+
+
+      <h2 class="mobile-only" style="margin-top:2%; margin-bottom: 5%; color: rgba(6, 50, 41, 1); font-weight: 300; font-size: 10pt; margin-right: 7%; text-align: justify;">
+        Através de uma série de workshops e da resolução de um Case Study, os participantes irão adquirir competências valiosas relacionadas com o empreendedorismo, a inovação e como levar um produto ao mercado.
+        <br><br>
+        É mais do que uma competição - é uma experiência imersiva de um dia inteiro que inclui oportunidades de networking, sessões de mentoria com especialistas da indústria e a oportunidade de conhecer pessoas com interesses semelhantes, desenvolver competências profissionais e ganhar experiência prática no mundo do empreendedorismo.</h2>
+
+
+    </div>
+    
+    <div class="image-content">
+      <img src="./images/BEE/FotoBEE2.png" alt="Group Photo" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- About This Event Section - How Does It Work -->
+<div id="about-this-event">
+  <div class="container">
+    <div class="image-content">
+      <img src="./images/BEE/FotoBEE1.png" alt="Group Photo" class="img-fluid">
+    </div>
+
+    <div class="text-content" style="font-size: 20pt; margin-left: 6%; color: rgba(6, 50, 41, 1); font-weight: 800; text-align: center;">
+      <b>CERIMÓNIA DE ABERTURA</b>
+      <h2 class="wide-screen-only" style="margin-top:2%; color: rgba(6, 50, 41, 1); font-weight: 300; font-size: 15pt; margin-right: 7%; text-align: justify;">
+        O BEE começa com uma cerimónia de abertura no sábado, onde é estabelecida uma ligação entre os participantes, os organizadores e o principal patrocinador do evento.
+        <br><br>
+      Durante a cerimónia, o tema do evento, sugerido pela empresa parceira ou pela equipa do evento, é anunciado, juntamente com o programa para o dia.</h2>
+
+      <h2 class="mobile-only" style="margin-top:2%; color: rgba(6, 50, 41, 1); font-weight: 300; font-size: 10pt; margin-right: 7%; text-align: justify;">
+        O BEE começa com uma cerimónia de abertura no sábado, onde é estabelecida uma ligação entre os participantes, os organizadores e o principal patrocinador do evento.
+        <br><br>
+      Durante a cerimónia, o tema do evento, sugerido pela empresa parceira ou pela equipa do evento, é anunciado, juntamente com o programa para o dia.</h2>
+
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+<div id="about-this-event">
+<div class= " wide-screen-only container-fluid elipsebiv text-white" style="margin-left: 10vh; margin-right: 10vh; border-radius:20px; background-color: #418B56;">
+  <div style="height:3vh; "> </div>
+  <b  style="text-align: justify; margin-left: 5%; font-size: 25pt;" > FASE DE CANDIDATURA</b> 
+  <div style="height:3vh; "> </div>
+  <h1 style="text-align: justify; margin-left: 5%; margin-right: 5%; font-size: 15pt;" > The event is divided into three parts, each consisting of a workshop followed by a working session where participants put into practice what they have just learned. The topics will be developed throughout the day as follows:</h1> 
+  <div style="height:3vh; "> </div>
+  <h1 style="text-align: justify; margin-left: 5%; margin-right: 70%; font-size: 15pt;" > <b>1.</b> Product conception, related to the chosen theme. The workshop topics may vary between Design Thinking, Waste Minimization, Circular Economy, or another topic proposed by the company that is suitable for the initial phase of a product.</h1>
+  <div style="height:3vh; "> </div> 
+  <h1 style="text-align: justify; margin-left: 35%; margin-right: 35%; margin-top:-20.5%; font-size: 15pt;" > <b>2.</b> Strategic perspective, taking the product/prototype to a more attractive and sustainable dimension in the market. Topics such as market segmentation, pre-manufacturing strategies, or distribution could be some of the essential themes.</h1> 
+  <div style="height:3vh; "> </div>
+  <h1 style="text-align: justify; margin-left: 70%; margin-right: 5%; margin-top:-16%; font-size: 15pt;" > <b>3.</b> Lastly, the domain of marketing and promotional strategies that captivate the target audience. Some of the proposed topics include understanding the target audience, presentation strategies, brand management, among others.</h1> 
+  <div style="height:7vh; "> </div>
+</div>
+
+<div class= "mobile-only container-fluid elipsebiv text-white" style="margin:5vh; border-radius:20px; background-color: #418B56;">
+  <div style="height:3vh; "> </div>
+  <b class="mobile-only" style="text-align: justify; margin-left: 5%; font-size: 20pt;" > FASE DE CANDIDATURA</b> 
+  <div style="height:3vh; "> </div>
+  <h1 style="text-align: justify; margin-left: 5%; margin-right: 5%; font-size: 10pt;" > O evento está dividido em três partes, cada uma consistindo num workshop seguido de uma sessão de trabalho onde os participantes põem em prática o que acabaram de aprender. Os temas serão desenvolvidos ao longo do dia da seguinte forma:</h1> 
+  <div style="height:3vh; "> </div>
+  <h1 class="wide-screen-only"  style="text-align: justify; margin-left: 5%; margin-right: 5%; font-size: 15pt;" > 1. Conceção de produto, relacionado com o tema escolhido. Os tópicos dos workshops podem variar entre Design Thinking, Minimização de Resíduos, Economia Circular ou outro tema proposto pela empresa que seja adequado para a fase inicial de um produto.</h1>
+  <h1 class="mobile-only"  style="text-align: justify; margin-left: 5%; margin-right: 5%; font-size: 10pt;" > 1.Conceção de produto, relacionado com o tema escolhido. Os tópicos dos workshops podem variar entre Design Thinking, Minimização de Resíduos, Economia Circular ou outro tema proposto pela empresa que seja adequado para a fase inicial de um produto.</h1>
+  <div style="height:3vh; "> </div> 
+  <h1 class="wide-screen-only" style="text-align: justify; margin-left: 5%; margin-right: 5%; font-size: 15pt;" > 2.Perspetiva estratégica, levando o produto/protótipo a uma dimensão mais atrativa e sustentável no mercado. Tópicos como segmentação de mercado, estratégias pré-fabrico ou distribuição podem ser alguns dos temas essenciais.</h1> 
+  <h1 class="mobile-only" style="text-align: justify; margin-left: 5%; margin-right: 5%; font-size: 10pt;" > 2. Perspetiva estratégica, levando o produto/protótipo a uma dimensão mais atrativa e sustentável no mercado. Tópicos como segmentação de mercado, estratégias pré-fabrico ou distribuição podem ser alguns dos temas essenciais.</h1> 
+  <div style="height:3vh; "> </div>
+  <h1 class="wide-screen-only" style="text-align: justify; margin-left: 5%; margin-right: 5%; font-size: 15pt;" > 3. Por fim, o domínio das estratégias de marketing e promoção que cativam o público-alvo. Alguns dos tópicos propostos incluem compreender o público-alvo, estratégias de apresentação, gestão de marca, entre outros.</h1> 
+  <h1 class="mobile-only" style="text-align: justify; margin-left: 5%; margin-right: 5%; font-size: 10pt;" > 3. Por fim, o domínio das estratégias de marketing e promoção que cativam o público-alvo. Alguns dos tópicos propostos incluem compreender o público-alvo, estratégias de apresentação, gestão de marca, entre outros.
+  </h1> 
+  <div style="height:3vh; "> </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- About This Event Section - How Does It Work -->
+<div id="about-this-event">
+  <div class="container">
+
+    <div class="text-content" style="font-size: 20pt; margin-left: 6%; color: rgba(6, 50, 41, 1); font-weight: 800; text-align: center;">
+      <b>CERIMÓNIA DE ENCERRAMENTO</b>
+      <h2 class="wide-screen-only" style="margin-top:2%; color: rgba(6, 50, 41, 1); font-weight: 300; font-size: 15pt; margin-right: 7%; text-align: justify;">
+        O evento termina com as apresentações finais, que serão realizadas pelas equipas na segunda-feira seguinte, perante um painel de juízes composto por representantes da empresa e membros do corpo docente. Após as apresentações e uma breve discussão, os vencedores são escolhidos.
+        <br><br>
+        O evento termina com as apresentações finais, que serão realizadas pelas equipas na segunda-feira seguinte, perante um painel de juízes composto por representantes da empresa e membros do corpo docente. Após as apresentações e uma breve discussão, os vencedores são escolhidos.</h2>        
+        
+
+      <h2 class="mobile-only" style="margin-top:2%; color: rgba(6, 50, 41, 1); font-weight: 300; font-size: 10pt; margin-right: 7%; text-align: justify;">
+        O evento termina com as apresentações finais, que serão realizadas pelas equipas na segunda-feira seguinte, perante um painel de juízes composto por representantes da empresa e membros do corpo docente. Após as apresentações e uma breve discussão, os vencedores são escolhidos.
+        <br><br>
+        O evento termina com as apresentações finais, que serão realizadas pelas equipas na segunda-feira seguinte, perante um painel de juízes composto por representantes da empresa e membros do corpo docente. Após as apresentações e uma breve discussão, os vencedores são escolhidos.</h2>        
+        
+    </div>
+
+    <div class="image-content">
+      <img src="./images/BEE/FotoBEE7.png" alt="Group Photo" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+
+
+
+<section id="partnership-section">
+  <div class="container">
+    <div class="partnership-reasons">
+      <h2>PORQUÊ CRIAR UMA PARCERIA COM O BEST?</h2>
+
+      Porquê criar uma pareceria com o BEST?
+      <div class="reasons-container" >
+        <div class="reason" style="background-color: #03604D; color: #CDDFDB;">
+          <h3>CONHECER OS ESTUDANTES</h3>
+          <p>Os estudantes que participam 
+            no BEE estão interessados e são proativos em descobrir as oportunidades que o mercado de trabalho tem para oferecer, 
+            bem como em expandir a sua rede profissional. A Cerimónia de Abertura é uma oportunidade para conhecer inicialmente 
+            os estudantes e estabelecer o primeiro contacto com eles. Todos os currículos dos participantes serão fornecidos.</p>
+        </div>
+        <div class="reason" style="background-color: #063229;">
+          <h3>PROMOÇÃO</h3>
+          <p>Dê a conhecer a sua 
+            empresa no campus. Todos os pacotes incluem várias publicações nas redes sociais e a presença do logótipo
+             da sua empresa nos cartazes que colocaremos por todo o Técnico.</p>
+        </div>
+
+        <div class="partners" style="background-color: #ECECEC;">
+          <h3>PARTNERS - PAST EDITION</h3>
+          <img src="./images/BEE/parceirosbee.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<div id="packages" class= "container-fluid text-white" style=" background-color: #063229;">
+  <div style="height:10vh; "> </div>
+  <b class="wide-screen-only" style="margin-left: 6%; font-size: 40pt; text-align: justify;" > OS NOSSOS PACOTES</b> 
+  <b class="mobile-only" style=" margin-top:-5%;  font-size: 30pt; text-align: center;" > OS NOSSOS PACOTES</b> 
+  <div class="mobile-only" style="height:5vh; "> </div>
+  <img class="wide-screen-only" style="width:45%; margin:5%; margin-top:5%;" src="images/BEE/packagesBEE.png"></img>
+  <img class="wide-screen-only" style="width:40%; margin:5%; margin-left:55%; margin-top:-40%;" src="images/BEE/Packages2BEE.png"></img>
+  <img class="mobile-only" style="width:80%; margin-left: 10%;  margin-top:0%;" src="images/BEE/Packages2BEE.png"></img>
+  <div style="height:5vh; "> </div>
+</div>
+
+
+
+
+
+
+
+    <!-- Página Team-->
+<!-- <div id="events" class="container-fluid elipsehome text-white" style="background-color: #418B56;"> para meter o fundo com as elipses? Precisa de se criar um novo css code a partir do outro só mesmo par poder mudar as elipses só neste--> 
+  <div id="our-team" style="background-color: #55AE84; /* Solid background color */
+  background: 
+    radial-gradient(circle at 0% 10%, #926644 0%, rgba(67, 83, 163, 0) 20%),
+    radial-gradient(circle at 100% 80%, #063229 20%, rgba(67, 83, 163, 0) 60%),
+    radial-gradient(circle at 70% 120%, #063229 10%, rgba(67, 83, 163, 0) 40%),
+    radial-gradient(circle at 20% 20%, #418B56 0%, rgba(67, 83, 163, 0) 50%);">
+    <h2 style="color:white">A NOSSA EQUIPA</h2>
+    <div class="carousel-container">
+      <div class="cards-wrapper">
+        <div class="team-card">
+          <div class="card-background" style="background-color: #418B56">
+            <div class="image-content">
+              <img src="./images/people/Catitas.png" alt="Catarina Dias">
+            </div>
+          </div>
+          <div class="text-content">
+            <h3 style="color:white">Catarina Dias</h3>
+            <p style="color:white">Presidente</p>
+            <p style="color:white">24/25</p>
+            <button class="contact-btn" style="background-color: #418B56;" onclick="copyEmail('catarina.dias@best-eu.org')">
+              <img src="./images/Icon mail.png" alt="link icon"> catarina.dias@best-eu.org
+            </button>
+          </div>
+        </div>
+        <!-- Repeat for other team members -->
+        <div class="team-card">
+          <div class="card-background" style="background-color: #418B56">
+            <div class="image-content">
+              <img src="./images/people/Henrique.png" alt="Henrique Cavaco">
+            </div>
+          </div>
+          <div class="text-content">
+            <h3 style="color:white" >Henrique Cavaco</h3>
+            <p style="color:white" >Vice Presidente de Serviços Externos</p>
+            <p style="color:white" >24/25</p>
+            <button class="contact-btn" style="background-color: #418B56;" onclick="copyEmail('henrique.cavaco@best-eu.org')">
+              <img src="./images/Icon mail.png" alt="link icon"> henrique.cavaco@best-eu.org
+            </button>
+          </div>
+        </div>
+        <!-- Continue repeating for all team members -->
+        <div class="team-card">
+          <div class="card-background" style="background-color: #418B56">
+            <div class="image-content">
+              <img src="./images/people/Liaaa.png" alt="Lia Neves">
+            </div>
+          </div>
+          <div class="text-content">
+            <h3 style="color:white" >Lia Neves</h3>
+            <p style="color:white" >Coordenadora CR</p>
+            <p style="color:white" >24/25</p>
+            <button class="contact-btn" style="background-color: #418B56;" onclick="copyEmail('lia.neves@best-eu.org')">
+              <img src="./images/Icon mail.png" alt="link icon"> lia.neves@best-eu.org
+            </button>
+          </div>
+        </div>
+  
+        <div class="team-card">
+          <div class="card-background" style="background-color: #418B56">
+            <div class="image-content">
+              <img src="./images/people/Rita.png" alt="Rita Graça">
+            </div>
+          </div>
+          <div class="text-content">
+            <h3 style="color:white">Rita Graça</h3>
+            <p style="color:white">Vice Presidente de Serviços Externos</p>
+            <p style="color:white">23/24</p>
+            <button class="contact-btn" style="background-color: #418B56;" onclick="copyEmail('rita.graca@best-eu.org')">
+              <img src="./images/Icon mail.png" alt="link icon"> rita.graca@best-eu.org
+            </button>
+          </div>
+        </div>
+  
+        <div class="team-card">
+          <div class="card-background" style="background-color: #418B56">
+            <div class="image-content">
+              <img src="./images/people/Megui.png" alt="Margarida Jardim">
+            </div>
+          </div>
+          <div class="text-content">
+            <h3 style="color:white">Margarida Jardim</h3>
+            <p style="color:white">Presidente</p>
+            <p style="color:white">23/24</p>
+            <button class="contact-btn" style="background-color: #418B56;" onclick="copyEmail('margarida.jardim@best-eu.org')">
+              <img src="./images/Icon mail.png" alt="link icon"> margarida.jardim@best-eu.org
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function copyEmail(email) {
+      const textArea = document.createElement("textarea");
+      textArea.value = email;
+      document.body.appendChild(textArea);
+      textArea.style.position = 'fixed';  // Avoid scrolling to bottom
+      textArea.style.opacity = '0';
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        alert("Email copied to clipboard: " + email);
+      } catch (err) {
+        console.error('Could not copy text: ', err);
+      }
+      document.body.removeChild(textArea);
+    }
+    </script>
+  
+  
+
+
+
+
+              
+    </main>
+    <footer>
+        <div class="bg-white text-center lg:text-left">
+            <div class="container px-20 text-gray-600 mx-auto p-6 ">
+                <div class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400">
+                    <div class="my-6 md:mb-0">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl font-semibold my-4">
+                                Contact us
+                            </h3>
+                            <a class="flex items-center space-x-2" href="mailto:lisbon@best-eu.org">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                </svg>
+                                <p>lisbon@best-eu.org</p>
+                            </a>
+                            <a class="flex items-center space-x-2" href="https://goo.gl/maps/tkWRJizZUSAqjceX6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <p>
+                                    Avenida Rovisco Pais, 1049-001 Lisboa, Portugal
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block my-6 md:mb-0">
+                        <div class="">
+                            <div class="flex lg:flex lg:flex-row-reverse items-center gap-x-5">
+                                <a href="https://www.best.eu.org/courses/list.jsp" class="flex-none">
+                                    <img src="./images/logos/courses.png" alt="best courses"
+                                        class="w-28 hover:scale-105 transition-transform" />
+                                </a>
+                                <a href="https://best.tecnico.ulisboa.pt/insideview/" class="flex-none" style ="margin:10p;">
+                                    <img src="./images/logos/BIV_newlogo_blue.png" alt="best inside view"
+                                        class="w-16 hover:scale-105 transition-transform" />
+                                </a>
+                                <a href="https://best.tecnico.ulisboa.pt/bee/" class="flex-none" style ="margin:-20px;">
+                                    <img src="./images/logos/logoinicialbee.png" alt="bee lisbon"
+                                        class="w-40 hover:scale-105 transition-transform" />
+                                </a>
+                                <a href="https://best.tecnico.ulisboa.pt/bite24/" class="flex-none" style ="margin:-45px;">
+                                    <img src="./images/logos/logo_bite.png" alt="bee lisbon"
+                                        class="w-42 hover:scale-105 transition-transform" style="margin-right: 7pt;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto text-gray-500">
+                    <p class="text-center">© 2023 BEST Lisboa. Todos os Direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/button_events.js"></script>
+    <script src="./js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,453 @@
+
+
+@layer base {
+    body {
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+.svg-border {
+    filter: drop-shadow(0 -1px 0px white) drop-shadow(0 -1px 0px white)
+        drop-shadow(0 2px 0px white) drop-shadow(0 2px 0px white);
+}
+
+/* .swiper {
+    max-width: 500px;
+    max-height: 400px;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif !important;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+}
+
+.navbar {
+    background-color: #F4F3EF; /* Adjust the alpha value as needed */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.my-btn .nav-link {
+    line-height: 0.2;
+}
+
+.semi-transparent {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.color-ball-blue {
+    background: radial-gradient(circle at 50% 50%, rgba(67, 83, 163, 0.5) 0%, rgba(67, 83, 163, 0) 75%) !important;
+}
+
+
+
+.curved-rectangle {
+    position: relative; 
+    width: 100vw; /* Adjust size as needed */
+    height: 70vw; /* Adjust size as needed */
+    background-color: #55AE84; /* Adjust color as needed */
+    border-radius: 10vw; /* Adjust curvature as needed */
+}
+
+
+ *,*:before,*:after {
+    box-sizing:border-box;
+ }
+ 
+
+
+.faq-toggle {
+    position: relative;
+    z-index: 1000;
+    margin-top: 4.5vw;
+    height: auto; /* Adjust as needed */
+    font-size: 2vw;
+    background: transparent;
+    border: none; /* Remove border */
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw; /* Adjust as needed */
+}
+
+.faq-content {
+    display: none;
+    height: 1%; /* Adjust as needed */
+    font-size: 1.5vw;
+}
+
+.faq-text {
+    text-align: left;
+    color: #F4F3EF;
+}
+
+.faq-arrow {
+    text-align: right;
+    color: #034461;
+
+}
+
+.mobile-only {
+    display: none;
+}
+
+
+
+.wide-screen-only {
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    .mobile-only {
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .wide-screen-only {
+        display: none;
+    }
+}
+
+.bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+  
+  .bg-emerald-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(16 185 129 / var(--tw-bg-opacity));
+  }
+  
+  .bg-gradient-to-r {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+  
+  .from-green-500 {
+    --tw-gradient-from: #3B8C7F;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(34 197 94 / 0));
+  }
+  
+  .from-green-400 {
+    --tw-gradient-from: #39635c;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(176, 209, 189, 0));
+  }
+  
+  .to-emerald-500 {
+    --tw-gradient-to: #063229;
+  }
+  
+  .to-green-500 {
+    --tw-gradient-to: #418B56;
+  }
+  
+  .elipsehome {
+    background:
+    radial-gradient(circle at 0% 60%, #926644 0%, rgba(67, 83, 163, 0) 18%),
+    radial-gradient(circle at 100% 80%, #063229 20%, rgba(67, 83, 163, 0) 60%),
+    radial-gradient(circle at 70% 120%, #063229 10%, rgba(67, 83, 163, 0) 40%),
+    radial-gradient(circle at 31% 5%, #418B56 0%, rgba(67, 83, 163, 0) 23%);
+}
+
+
+.elipsebiv {
+    background:
+    radial-gradient(circle at 40% 80%, #926644 0%, rgba(67, 83, 163, 0) 30%),
+    radial-gradient(circle at 100% 80%, #063229 0%, rgba(67, 83, 163, 0) 60%),
+    radial-gradient(circle at 70% 120%, #063229 0%, rgba(67, 83, 163, 0) 40%),
+    radial-gradient(circle at 90% 70%, #418B56 40%, rgba(67, 83, 163, 0) 70%);
+}
+
+#footer {
+    background-color: #063229;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Events Section */
+#events {
+    padding: 4vh 0;
+  }
+  
+  #events .card {
+    background-color: #CDDFDB;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  #events .event-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+  #events .card-title {
+    font-size: 1.5rem;
+    color: #052720;
+    margin-left: 10px;
+  }
+  
+  #events .card-subtitle {
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 100px;
+  }
+  
+  #events .card-text {
+    font-size: 0.9rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+  
+  #events .btn-dark {
+    background-color: #052720;
+    border: none;
+  }
+  
+  #events .btn-dark:hover {
+    background-color: #418B56;
+  }
+  
+  #events .learn-more-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (min-width: 768px) {
+    #events .card-title {
+      font-size: 2rem;
+    }
+  
+    #events .card-text {
+      font-size: 1rem;
+    }
+  }
+  
+
+  #our-team {
+    background: transparent;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #our-team h2 {
+    font-size: 2.5rem;
+    color: #052720;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .carousel-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .team-card {
+    min-width: 250px;
+    width: 250px;
+    position: relative;
+    padding: 0px;
+    box-shadow: none;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .first-card {
+    min-width: 250px;
+    width: 250px;
+    margin: 8%;
+    position: relative;
+    padding: 0px;
+    box-shadow: none;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-background {
+    background-color: #55AE84; /* Solid background color */
+    background: 
+      radial-gradient(circle at 0% 60%, #926644 0%, rgba(67, 83, 163, 0) 40%),
+      radial-gradient(circle at 100% 80%, #063229 20%, rgba(67, 83, 163, 0) 60%),
+      radial-gradient(circle at 70% 120%, #063229 10%, rgba(67, 83, 163, 0) 40%),
+      radial-gradient(circle at 31% 5%, #418B56 0%, rgba(67, 83, 163, 0) 23%);
+    border-radius: 15px;
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .image-content {
+    background-color: transparent;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .image-content img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .text-content {
+    margin-top: 10px;
+  }
+  
+  .text-content h3 {
+    font-size: 1.2rem;
+    color: #052720;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .contact-btn {
+    background-color: #052720;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem; /* Adjust text size here */
+  }
+  
+  .contact-btn img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+  
+  .contact-btn:hover {
+    background-color: #034c39;
+  }
+  
+  /* Center button with other text elements */
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1000px) {
+    #our-team h2 {
+      font-size: 3rem;
+    }
+  
+    .team-card {
+      min-width: 200px;
+      width: 200px;
+    }
+  
+    .text-content h3 {
+      font-size: 1.25rem;
+    }
+  
+    .text-content p {
+      font-size: 1rem;
+    }
+  
+    .contact-btn {
+      padding: 4px 8px;
+      font-size: 0.9rem; /* Adjust text size here */
+    }
+  
+    .contact-btn img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #our-team h2 {
+      font-size: 2.5rem;
+    }
+  
+    .team-card {
+      min-width: 150px;
+      width: 150px;
+      padding: 1.5px;
+    }
+  
+    .text-content h3 {
+      font-size: 1.1rem;
+    }
+  
+    .text-content p {
+      font-size: 0.85rem;
+    }
+  
+    .contact-btn {
+      padding: 3px 5px;
+      font-size: 0.75rem; /* Adjust text size here */
+    }
+  
+    .contact-btn img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  
