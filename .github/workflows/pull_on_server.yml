@@ -1,0 +1,30 @@
+name: Pull Changes on Remote Server
+
+on:
+  push:
+    branches:
+      - main # Trigger when changes are pushed to the 'main' branch.
+
+jobs:
+  pull-on-server:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Install sshpass to allow password-based SSH
+      - name: Install sshpass
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y sshpass
+
+      # SSH into the server and pull changes
+      - name: SSH and Git Pull
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@sigma.ist.utl.pt << 'EOF'
+            eval "$(ssh-agent -s)"
+            ssh-add ~/.ssh/github
+            cd /afs/ist.utl.pt/groups/best/web/corporate_relations
+            git pull origin main
+          EOF
