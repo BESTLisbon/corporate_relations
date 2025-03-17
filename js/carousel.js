@@ -1,13 +1,13 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: "horizontal",
+  direction: 'horizontal',
   loop: true,
   autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+    delay: 2500,
+    disableOnInteraction: false,
   },
   scrollbar: {
-      el: ".swiper-scrollbar",
-      hide: true,
+    el: '.swiper-scrollbar',
+    hide: true,
   },
 });
