@@ -13,24 +13,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link href="https://fonts.cdnfonts.com/css/kalam" rel="stylesheet" />
 
     <!-- Swiper -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous" />
+      crossorigin="anonymous"
+    />
 
     <style>
       a {
@@ -77,44 +82,52 @@
               <button
                 class="bg-white rounded-md py-1 px-3 hover:scale-105 transition-transform text-dark flex items-center space-x-2"
                 href="./index.html"
-                onclick="toggleDropdown()">
-                <p class="font-semibold">Our Events</p>
+                onclick="toggleDropdown()"
+              >
+                <p class="font-semibold mb-0">Our Events</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-10 fill-dark"
-                  viewBox="0 0 20 20">
+                  viewBox="0 0 20 20"
+                >
                   <path
                     fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    cdivp-rule="evenodd" />
+                    cdivp-rule="evenodd"
+                  />
                 </svg>
               </button>
               <div
                 class="absolute bg-white rounded-md hidden flex-col items-center gap-y-5 w-44 py-3 mt-2 shadow-md"
-                id="dropdown">
+                id="dropdown"
+              >
                 <a href="BEE.html" class="flex-none">
                   <img
                     src="./images/logos/logoinicialbee.png"
                     alt="bee lisbon"
-                    class="w-33 hover:scale-105 transition-transform" />
+                    class="w-33 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BCS.html" class="flex-none">
                   <img
                     src="./images/logos/courses.png"
                     alt="best courses"
-                    class="w-28 hover:scale-105 transition-transform" />
+                    class="w-28 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BIV.html" class="flex-none">
                   <img
                     src="./images/logos/BIV_newlogo_blue.png"
                     alt="best inside view"
-                    class="w-16 hover:scale-105 transition-transform" />
+                    class="w-16 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BITE.html" class="flex-none">
                   <img
                     src="./images/logos/logo_bite.png"
                     alt="BITE"
-                    class="w-40 hover:scale-90 transition-transform" />
+                    class="w-40 hover:scale-90 transition-transform"
+                  />
                 </a>
               </div>
             </div>
@@ -130,16 +143,19 @@
           <!--Mobile Button-->
           <div
             class="lg:hidden hover:scale-105 transition-transform"
-            onclick="toggleSideBar()">
+            onclick="toggleSideBar()"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-10 w-10 fill-white ml-20"
               viewBox="0 0 20 20"
-              fill="currentColor">
+              fill="currentColor"
+            >
               <path
                 fill-rule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd" />
+                clip-rule="evenodd"
+              />
             </svg>
           </div>
         </div>
@@ -148,76 +164,87 @@
       <!--SideBar-->
       <div
         id="sidebar"
-        class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200">
+        class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200"
+      >
         <div class="duration-100">
           <img
             src="./images/logos/best_lisbon_green.png"
             alt="best"
-            class="w-36 mx-7 lg:my-14 my-9" />
+            class="w-36 mx-7 lg:my-14 my-9"
+          />
 
-          <ul class="text-emerald-500 font-semibold text-2xl ml-8">
-            <li class="mb-8 px-3 hover:text-green-500">
+          <ul class="text-emerald-500 font-semibold text-2xl ml-4">
+            <li class="mb-8 hover:text-green-500">
               <a style="color: #052720 !important" href="./index.html">Home</a>
             </li>
-            <li class="mb-8 px-3 hover:text-green-500">
+            <li class="mb-8 hover:text-green-500">
               <a style="color: #052720 !important" href="#about">About us</a>
             </li>
-            <li class="mb-8 px-3 hover:text-green-500">
+            <li class="mb-8 hover:text-green-500">
               <a style="color: #052720 !important" href="#events">Our events</a>
             </li>
-            <li class="mb-8 px-3 hover:text-green-500">
+            <li class="mb-8 hover:text-green-500">
               <a style="color: #052720 !important" href="#our-team">Team</a>
             </li>
             <li class="">
               <button
-                class="bg-emerald-500 rounded-md py-1 px-3 hover:scale-105 transition-transform w-52 text-white flex items-center space-x-2"
-                onclick="toggleDropdownSide()">
-                <p class="font-semibold">Our Events</p>
+                class="bg-emerald-500 rounded-md py-2 px-2 hover:scale-105 transition-transform text-white flex items-center space-x-2"
+                onclick="toggleDropdownSide()"
+              >
+                <p class="font-semibold mb-0">Our Events</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-7 w-7 fill-white"
-                  viewBox="0 0 20 20">
+                  viewBox="0 0 20 20"
+                >
                   <path
                     fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    cdivp-rule="evenodd" />
+                    cdivp-rule="evenodd"
+                  />
                 </svg>
               </button>
 
               <div
                 class="absolute border-4 border-emerald-500 rounded-md hidden flex-col items-center gap-y-5 w-52 py-3 mt-2 shadow-md"
-                id="dropdownside">
+                id="dropdownside"
+              >
                 <a href="BEE.html" class="flex-none">
                   <img
                     src="./images/logos/logo_bee.png"
                     alt="bee lisbon"
-                    class="w-33 hover:scale-105 transition-transform" />
+                    class="w-33 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BCS.html" class="flex-none">
                   <img
                     src="./images/logos/courses.png"
                     alt="best courses"
-                    class="w-28 hover:scale-105 transition-transform" />
+                    class="w-28 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BIV.html" class="flex-none">
                   <img
                     src="./images/logos/BIV_newlogo_blue.png"
                     alt="best inside view"
-                    class="w-16 hover:scale-105 transition-transform" />
+                    class="w-16 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BITE.html" class="flex-none">
                   <img
                     style="width: 40vw"
                     src="./images/logos/logo_bite.png"
                     alt="best inside view"
-                    class="w-16 hover:scale-105 transition-transform" />
+                    class="w-16 hover:scale-105 transition-transform"
+                  />
                 </a>
               </div>
             </li>
           </ul>
           <!-- Flag -->
           <div
-            class="hover:scale-105 transition-transform bottom-10 left-9 absolute">
+            class="hover:scale-105 transition-transform bottom-10 left-9 absolute"
+          >
             <a href="./pt_index.html"
               ><img
                 class="w-10 rounded-sm"
@@ -234,7 +261,8 @@
     <main>
       <div
         class="container-fluid elipsehome text-white"
-        style="background-color: #418b56">
+        style="background-color: #418b56"
+      >
         <div class="wide-screen-only" style="height: 33vh"></div>
         <div class="mobile-only" style="height: 15vh"></div>
 
@@ -249,7 +277,8 @@
 
         <b
           class="wide-screen-only"
-          style="margin-left: 9.5%; margin-top: -5%; font-size: 90pt">
+          style="margin-left: 9.5%; margin-top: -5%; font-size: 90pt"
+        >
           BEST LISBON</b
         >
         <b
@@ -260,13 +289,15 @@
             margin-top: 0%;
             font-size: 70pt;
             text-align: center;
-          ">
+          "
+        >
           BEST LISBON</b
         >
 
         <h1
           class="wide-screen-only"
-          style="margin-left: 10%; margin-top: -2%; font-size: 30pt">
+          style="margin-left: 10%; margin-top: -2%; font-size: 30pt"
+        >
           Corporate Relations
         </h1>
         <h1
@@ -276,7 +307,8 @@
             text-align: center;
             margin-top: 0%;
             font-size: 30pt;
-          ">
+          "
+        >
           Corporate Relations
         </h1>
 
@@ -308,7 +340,8 @@
             <img
               src="./images/aboutus.png"
               alt="Group Photo"
-              class="img-fluid" />
+              class="img-fluid"
+            />
           </div>
         </div>
       </section>
@@ -317,12 +350,14 @@
       <div
         id="events"
         class="container-fluid elipsehome text-white"
-        style="background-color: #418b56; padding: 4vh 0">
+        style="background-color: #418b56; padding: 4vh 0"
+      >
         <div class="container">
           <div style="height: 5vh"></div>
           <div
             class="container-fluid"
-            style="width: 100%; border-radius: 20px; background-color: #052720">
+            style="width: 100%; border-radius: 20px; background-color: #052720"
+          >
             <div style="height: 1vh"></div>
             <b
               class="text-center mb-5 wide-screen-only"
@@ -344,7 +379,8 @@
                 <img
                   src="./images/logos/Logo fundo branco 1 (1).png"
                   class="event-logo"
-                  alt="BITE Logo" />
+                  alt="BITE Logo"
+                />
                 <div class="card-body">
                   <h5 class="card-title">BITE</h5>
                   <h6 class="card-subtitle mb-2 text-muted">
@@ -364,7 +400,8 @@
                   <button
                     type="button"
                     onclick="window.location.href='BITE.html'"
-                    class="btn btn-dark learn-more-btn">
+                    class="btn btn-dark learn-more-btn"
+                  >
                     Learn <i class="bi bi-plus fw-semibold text-light"></i>
                   </button>
                 </div>
@@ -377,7 +414,8 @@
                 <img
                   src="./images/logos/logo biv (1) 2.png"
                   class="event-logo"
-                  alt="BIV Logo" />
+                  alt="BIV Logo"
+                />
                 <div class="card-body">
                   <h5 class="card-title">BIV</h5>
                   <h6 class="card-subtitle mb-2 text-muted">
@@ -403,7 +441,8 @@
                   <button
                     type="button"
                     onclick="window.location.href='BIV.html'"
-                    class="btn btn-dark learn-more-btn">
+                    class="btn btn-dark learn-more-btn"
+                  >
                     Learn <i class="bi bi-plus fw-semibold text-light"></i>
                   </button>
                 </div>
@@ -416,7 +455,8 @@
                 <img
                   src="./images/logos/logoBEE24 1 (4).png"
                   class="event-logo"
-                  alt="BEE Logo" />
+                  alt="BEE Logo"
+                />
                 <div class="card-body">
                   <h5 class="card-title">BEE</h5>
                   <h6 class="card-subtitle mb-2 text-muted">
@@ -435,7 +475,8 @@
                   <button
                     type="button"
                     onclick="window.location.href='BEE.html'"
-                    class="btn btn-dark learn-more-btn">
+                    class="btn btn-dark learn-more-btn"
+                  >
                     Learn <i class="bi bi-plus fw-semibold text-light"></i>
                   </button>
                 </div>
@@ -447,7 +488,8 @@
                 <img
                   src="./images/logos/courses.png"
                   class="event-logo"
-                  alt="BC Logo" />
+                  alt="BC Logo"
+                />
                 <div class="card-body">
                   <h5 class="card-title">BEST Courses</h5>
                   <h6 class="card-subtitle mb-2 text-muted">
@@ -466,7 +508,8 @@
                   <button
                     type="button"
                     onclick="window.location.href='BCS.html'"
-                    class="btn btn-dark learn-more-btn">
+                    class="btn btn-dark learn-more-btn"
+                  >
                     Learn <i class="bi bi-plus fw-semibold text-light"></i>
                   </button>
                 </div>
@@ -496,7 +539,8 @@
                 <button
                   class="contact-btn"
                   style="background-color: #418b56"
-                  onclick="copyEmail('catarina.dias@best-eu.org')">
+                  onclick="copyEmail('catarina.dias@best-eu.org')"
+                >
                   <img src="./images/Icon mail.png" alt="link icon" />
                   catarina.dias@best-eu.org
                 </button>
@@ -508,7 +552,8 @@
                 <div class="image-content">
                   <img
                     src="./images/people/Henrique.png"
-                    alt="Henrique Cavaco" />
+                    alt="Henrique Cavaco"
+                  />
                 </div>
               </div>
               <div class="text-content">
@@ -518,7 +563,8 @@
                 <button
                   class="contact-btn"
                   style="background-color: #418b56"
-                  onclick="copyEmail('henrique.cavaco@best-eu.org')">
+                  onclick="copyEmail('henrique.cavaco@best-eu.org')"
+                >
                   <img src="./images/Icon mail.png" alt="link icon" />
                   henrique.cavaco@best-eu.org
                 </button>
@@ -538,7 +584,8 @@
                 <button
                   class="contact-btn"
                   style="background-color: #418b56"
-                  onclick="copyEmail('lia.neves@best-eu.org')">
+                  onclick="copyEmail('lia.neves@best-eu.org')"
+                >
                   <img src="./images/Icon mail.png" alt="link icon" />
                   lia.neves@best-eu.org
                 </button>
@@ -558,7 +605,8 @@
                 <button
                   class="contact-btn"
                   style="background-color: #418b56"
-                  onclick="copyEmail('rita.graca@best-eu.org')">
+                  onclick="copyEmail('rita.graca@best-eu.org')"
+                >
                   <img src="./images/Icon mail.png" alt="link icon" />
                   rita.graca@best-eu.org
                 </button>
@@ -578,7 +626,8 @@
                 <button
                   class="contact-btn"
                   style="background-color: #418b56"
-                  onclick="copyEmail('margarida.jardim@best-eu.org')">
+                  onclick="copyEmail('margarida.jardim@best-eu.org')"
+                >
                   <img src="./images/Icon mail.png" alt="link icon" />
                   margarida.jardim@best-eu.org
                 </button>
@@ -590,17 +639,17 @@
 
       <script>
         function copyEmail(email) {
-          const textArea = document.createElement('textarea');
+          const textArea = document.createElement("textarea");
           textArea.value = email;
           document.body.appendChild(textArea);
-          textArea.style.position = 'fixed'; // Avoid scrolling to bottom
-          textArea.style.opacity = '0';
+          textArea.style.position = "fixed"; // Avoid scrolling to bottom
+          textArea.style.opacity = "0";
           textArea.select();
           try {
-            document.execCommand('copy');
-            alert('Email copied to clipboard: ' + email);
+            document.execCommand("copy");
+            alert("Email copied to clipboard: " + email);
           } catch (err) {
-            console.error('Could not copy text: ', err);
+            console.error("Could not copy text: ", err);
           }
           document.body.removeChild(textArea);
         }
@@ -610,7 +659,8 @@
       <div class="bg-white text-center lg:text-left">
         <div class="container px-20 text-gray-600 mx-auto p-6">
           <div
-            class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400">
+            class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400"
+          >
             <div class="my-6 md:mb-0">
               <div class="text-center md:text-left">
                 <h3 style="color: black" class="text-xl font-semibold my-4">
@@ -618,31 +668,38 @@
                 </h3>
                 <a
                   class="flex items-center space-x-2"
-                  href="mailto:lisbon@best-eu.org">
+                  href="mailto:lisbon@best-eu.org"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5 inline"
                     viewBox="0 0 20 20"
-                    fill="currentColor">
+                    fill="currentColor"
+                  >
                     <path
-                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
                     <path
-                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
                   </svg>
                   <p style="color: black">lisbon@best-eu.org</p>
                 </a>
                 <a
                   class="flex items-center space-x-2"
-                  href="https://goo.gl/maps/tkWRJizZUSAqjceX6">
+                  href="https://goo.gl/maps/tkWRJizZUSAqjceX6"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5"
                     viewBox="0 0 20 20"
-                    fill="currentColor">
+                    fill="currentColor"
+                  >
                     <path
                       fill-rule="evenodd"
                       d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                      clip-rule="evenodd" />
+                      clip-rule="evenodd"
+                    />
                   </svg>
                   <p style="color: black">
                     Avenida Rovisco Pais, 1049-001 Lisboa, Portugal
@@ -653,42 +710,51 @@
             <div class="hidden lg:block my-6 md:mb-0">
               <div class="">
                 <div
-                  class="flex lg:flex lg:flex-row-reverse items-center gap-x-5">
+                  class="flex lg:flex lg:flex-row-reverse items-center gap-x-5"
+                >
                   <a
                     href="https://www.best.eu.org/courses/list.jsp"
-                    class="flex-none">
+                    class="flex-none"
+                  >
                     <img
                       src="./images/logos/courses.png"
                       alt="best courses"
-                      class="w-28 hover:scale-105 transition-transform" />
+                      class="w-28 hover:scale-105 transition-transform"
+                    />
                   </a>
                   <a
                     href="https://best.tecnico.ulisboa.pt/insideview/"
                     class="flex-none"
-                    style="margin: 10p">
+                    style="margin: 10p"
+                  >
                     <img
                       src="./images/logos/BIV_newlogo_blue.png"
                       alt="best inside view"
-                      class="w-16 hover:scale-105 transition-transform" />
+                      class="w-16 hover:scale-105 transition-transform"
+                    />
                   </a>
                   <a
                     href="https://best.tecnico.ulisboa.pt/bee/"
                     class="flex-none"
-                    style="margin: -20px">
+                    style="margin: -20px"
+                  >
                     <img
                       src="./images/logos/logoinicialbee.png"
                       alt="bee lisbon"
-                      class="w-40 hover:scale-105 transition-transform" />
+                      class="w-40 hover:scale-105 transition-transform"
+                    />
                   </a>
                   <a
                     href="https://best.tecnico.ulisboa.pt/bite24/"
                     class="flex-none"
-                    style="margin: -45px">
+                    style="margin: -45px"
+                  >
                     <img
                       src="./images/logos/logo_bite.png"
                       alt="bee lisbon"
                       class="w-42 hover:scale-105 transition-transform"
-                      style="margin-right: 7pt" />
+                      style="margin-right: 7pt"
+                    />
                   </a>
                 </div>
               </div>

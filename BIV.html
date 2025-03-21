@@ -13,19 +13,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link href="https://fonts.cdnfonts.com/css/kalam" rel="stylesheet" />
 
     <!-- Swiper -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
     <!-- Script -->
     <script src="./js/button_events.js"></script>
@@ -46,7 +50,8 @@
           </div>
           <div class="hidden lg:flex space-x-12 items-center">
             <div
-              class="hover:text-gray-200 border-b-4 rounded-b-sm border-white hover:border-gray-200">
+              class="hover:text-gray-200 border-b-4 rounded-b-sm border-white hover:border-gray-200"
+            >
               <a href="./index.html">Home</a>
             </div>
             <div class="hover:text-gray-200">
@@ -62,44 +67,52 @@
               <button
                 class="bg-white rounded-md py-1 px-3 hover:scale-105 transition-transform text-emerald-500 flex items-center space-x-2"
                 href="./index.html"
-                onclick="toggleDropdown()">
+                onclick="toggleDropdown()"
+              >
                 <p class="font-semibold">Our Events</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-7 w-7 fill-emerald-500"
-                  viewBox="0 0 20 20">
+                  viewBox="0 0 20 20"
+                >
                   <path
                     fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    cdivp-rule="evenodd" />
+                    cdivp-rule="evenodd"
+                  />
                 </svg>
               </button>
               <div
                 class="absolute bg-white rounded-md hidden flex-col items-center gap-y-5 w-44 py-3 mt-2 shadow-md"
-                id="dropdown">
+                id="dropdown"
+              >
                 <a href="BEE.html" class="flex-none">
                   <img
                     src="./images/logos/logoinicialbee.png"
                     alt="bee lisbon"
-                    class="w-33 hover:scale-105 transition-transform" />
+                    class="w-33 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BCS.html" class="flex-none">
                   <img
                     src="./images/logos/courses.png"
                     alt="best courses"
-                    class="w-28 hover:scale-105 transition-transform" />
+                    class="w-28 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BIV.html" class="flex-none">
                   <img
                     src="./images/logos/BIV_newlogo_blue.png"
                     alt="best inside view"
-                    class="w-16 hover:scale-105 transition-transform" />
+                    class="w-16 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BITE.html" class="flex-none">
                   <img
                     src="./images/logos/logo_bite.png"
                     alt="BITE"
-                    class="w-40 hover:scale-90 transition-transform" />
+                    class="w-40 hover:scale-90 transition-transform"
+                  />
                 </a>
               </div>
             </div>
@@ -115,16 +128,19 @@
           <!--Mobile Button-->
           <div
             class="lg:hidden hover:scale-105 transition-transform"
-            onclick="toggleSideBar()">
+            onclick="toggleSideBar()"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-10 w-10 fill-white ml-20"
               viewBox="0 0 20 20"
-              fill="currentColor">
+              fill="currentColor"
+            >
               <path
                 fill-rule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd" />
+                clip-rule="evenodd"
+              />
             </svg>
           </div>
         </div>
@@ -133,12 +149,14 @@
       <!--SideBar-->
       <div
         id="sidebar"
-        class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200">
+        class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200"
+      >
         <div class="duration-100">
           <img
             src="./images/logos/best_lisbon_green.png"
             alt="best"
-            class="w-36 mx-7 lg:my-14 my-9" />
+            class="w-36 mx-7 lg:my-14 my-9"
+          />
 
           <ul class="text-emerald-500 font-semibold text-2xl ml-8">
             <li class="mb-8 px-3 hover:text-green-500">
@@ -156,53 +174,62 @@
             <li class="">
               <button
                 class="bg-emerald-500 rounded-md py-1 px-3 hover:scale-105 transition-transform w-52 text-white flex items-center space-x-2"
-                onclick="toggleDropdownSide()">
+                onclick="toggleDropdownSide()"
+              >
                 <p class="font-semibold">Our Events</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-7 w-7 fill-white"
-                  viewBox="0 0 20 20">
+                  viewBox="0 0 20 20"
+                >
                   <path
                     fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    cdivp-rule="evenodd" />
+                    cdivp-rule="evenodd"
+                  />
                 </svg>
               </button>
 
               <div
                 class="absolute border-4 border-emerald-500 rounded-md hidden flex-col items-center gap-y-5 w-52 py-3 mt-2 shadow-md"
-                id="dropdownside">
+                id="dropdownside"
+              >
                 <a href="BEE.html" class="flex-none">
                   <img
                     src="./images/logos/logo_bee.png"
                     alt="bee lisbon"
-                    class="w-33 hover:scale-105 transition-transform" />
+                    class="w-33 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BCS.html" class="flex-none">
                   <img
                     src="./images/logos/courses.png"
                     alt="best courses"
-                    class="w-28 hover:scale-105 transition-transform" />
+                    class="w-28 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BIV.html" class="flex-none">
                   <img
                     src="./images/logos/BIV_newlogo_blue.png"
                     alt="best inside view"
-                    class="w-16 hover:scale-105 transition-transform" />
+                    class="w-16 hover:scale-105 transition-transform"
+                  />
                 </a>
                 <a href="BITE.html" class="flex-none">
                   <img
                     style="width: 40vw"
                     src="./images/logos/logo_bite.png"
                     alt="best inside view"
-                    class="w-16 hover:scale-105 transition-transform" />
+                    class="w-16 hover:scale-105 transition-transform"
+                  />
                 </a>
               </div>
             </li>
           </ul>
           <!-- Flag -->
           <div
-            class="hover:scale-105 transition-transform bottom-10 left-9 absolute">
+            class="hover:scale-105 transition-transform bottom-10 left-9 absolute"
+          >
             <a href="./BIVpt.html"
               ><img
                 class="w-10 rounded-sm"
@@ -219,13 +246,15 @@
     <main>
       <div
         class="container-fluid elipsebiv text-white"
-        style="background-color: #063229">
+        style="background-color: #063229"
+      >
         <div class="wide-screen-only" style="height: 20vh"></div>
         <div class="mobile-only" style="height: 5vh"></div>
 
         <b
           class="wide-screen-only"
-          style="margin-left: 10%; margin-top: -2%; font-size: 70pt">
+          style="margin-left: 10%; margin-top: -2%; font-size: 70pt"
+        >
           BEST INSIDE VIEW</b
         >
         <b
@@ -235,18 +264,21 @@
             margin-top: -2%;
             font-size: 40pt;
             text-align: center;
-          ">
+          "
+        >
           BEST INSIDE VIEW</b
         >
 
         <h1
           class="wide-screen-only"
-          style="margin-left: 10%; margin-top: -2%; font-size: 45pt">
+          style="margin-left: 10%; margin-top: -2%; font-size: 45pt"
+        >
           What is BIV?
         </h1>
         <h1
           class="mobile-only"
-          style="margin-top: -2%; font-size: 35pt; text-align: center">
+          style="margin-top: -2%; font-size: 35pt; text-align: center"
+        >
           What is BIV?
         </h1>
 
@@ -261,13 +293,14 @@
             font-size: 15pt;
             text-align: justify;
             margin-inline: 10%;
-          ">
+          "
+        >
           <b>BEST Inside view</b> is a pioneer initiative organised by
           <b> BEST Lisboa </b>, partnering with
           <b> Instituto Superior Técnico </b>. It acts as a
           <b>job shadowing event</b> , in which the university student follows a
           professional on his line of interest during a work day. This event
-          counts with <b>11 editions</b>, being one of the main career support
+          counts with <b>12 editions</b>, being one of the main career support
           events done in the Lisbon University. BIV is an excellent occasion for
           the company to <b>show their works and opportunities </b> for the
           students.
@@ -281,13 +314,14 @@
             text-align: justify;
             margin-inline: 10%;
             font-size: 10pt;
-          ">
+          "
+        >
           <b>BEST Inside view</b> is a pioneer initiative organised by
           <b> BEST Lisboa </b>, partnering with
           <b> Instituto Superior Técnico </b>. It acts as a
           <b>job shadowing event</b> , in which the university student follows a
           professional on his line of interest during a work day. This event
-          counts with <b>11 editions</b>, being one of the main career support
+          counts with <b>12 editions</b>, being one of the main career support
           events done in the Lisbon University. BIV is an excellent occasion for
           the company to <b>show their works and opportunities </b> for the
           students.
@@ -302,7 +336,8 @@
                     <img
                       class="rounded-image"
                       src="./images/BIV/Mask groupbiv1.png"
-                      alt="Photo 1" />
+                      alt="Photo 1"
+                    />
                   </div>
                 </div>
               </div>
@@ -312,7 +347,8 @@
                     <img
                       class="rounded-image"
                       src="./images/BIV/Mask groupbiv2.png"
-                      alt="Photo 2" />
+                      alt="Photo 2"
+                    />
                   </div>
                 </div>
               </div>
@@ -322,7 +358,8 @@
                     <img
                       class="rounded-image"
                       src="./images/BIV/Mask groupbiv3.png"
-                      alt="Photo 3" />
+                      alt="Photo 3"
+                    />
                   </div>
                 </div>
               </div>
@@ -334,12 +371,14 @@
                       style="height: 12.5vh"
                       class="rounded-image"
                       src="./images/BIV/Mask groupbiv4.png"
-                      alt="Photo 5" />
+                      alt="Photo 5"
+                    />
                     <img
                       class="rounded-image"
                       style="height: 16vh"
                       src="./images/BIV/Mask groupbiv4.png"
-                      alt="Photo 5" />
+                      alt="Photo 5"
+                    />
                   </div>
                 </div>
               </div>
@@ -351,12 +390,14 @@
                       style="height: 12.5vh"
                       class="rounded-image"
                       src="./images/BIV/Mask groupbiv5.png"
-                      alt="Photo 5" />
+                      alt="Photo 5"
+                    />
                     <img
                       class="rounded-image"
                       style="height: 16vh"
                       src="./images/BIV/Mask groupbiv5.png"
-                      alt="Photo 5" />
+                      alt="Photo 5"
+                    />
                   </div>
                 </div>
               </div>
@@ -372,7 +413,8 @@
     <!-- Página sobre o que é o BIV -->
     <div
       id="about"
-      style="background-color: #cddfdb; width: 100%; overflow: hidden">
+      style="background-color: #cddfdb; width: 100%; overflow: hidden"
+    >
       <div style="height: 15vh"></div>
       <div class="wide-screen-only" style="height: 10vh"></div>
 
@@ -382,7 +424,8 @@
           margin-inline: 10%;
           justify-content: space-between;
           margin-bottom: 8%;
-        ">
+        "
+      >
         <section id="op-ceremony">
           <b
             class="wide-screen-only"
@@ -393,7 +436,8 @@
               color: rgba(6, 50, 41, 1);
               font-weight: 800;
               text-align: center;
-            ">
+            "
+          >
             OPENING CEREMONY
           </b>
           <b
@@ -405,7 +449,8 @@
               color: rgba(6, 50, 41, 1);
               font-weight: 800;
               text-align: center;
-            ">
+            "
+          >
             OPENING CEREMONY
           </b>
 
@@ -418,7 +463,8 @@
               font-size: 15pt;
               margin-right: 7%;
               text-align: justify;
-            ">
+            "
+          >
             On <b style="font-weight: 600">march 14th</b> in IST qwe will have
             an <b style="font-weight: 600">Opening Ceremony</b> of
             <b style="font-weight: 600">BEST Inside View</b>. It will include<b
@@ -462,7 +508,8 @@
               margin-right: 2%;
               align-items: center;
               text-align: justify;
-            ">
+            "
+          >
             Será no dia <b style="font-weight: 600">14 de março</b> no IST que
             se realizará a <b style="font-weight: 600">Opening Ceremony</b> do
             <b style="font-weight: 600">BEST Inside View</b>. Incluirá uma
@@ -500,7 +547,8 @@
           src="./images/BIV/Mask groupbiv4.png"
           alt="3"
           width="45%"
-          height="auto" />
+          height="auto"
+        />
       </section>
 
       <div>
@@ -514,7 +562,8 @@
             align-items: center;
           "
           src="./images/BIV/Mask groupbiv4.png"
-          alt="3" />
+          alt="3"
+        />
       </div>
       <div class="mobile-only" style="height: 8vh"></div>
       <section
@@ -523,13 +572,15 @@
           margin-inline: 10%;
           justify-content: space-between;
           margin-bottom: 10%;
-        ">
+        "
+      >
         <img
           class="wide-screen-only"
           src="./images/BIV/Mask groupbiv5.png"
           alt="3"
           width="40%"
-          height="auto" />
+          height="auto"
+        />
 
         <section id="inside-days">
           <b
@@ -541,7 +592,8 @@
               color: rgba(6, 50, 41, 1);
               font-weight: 800;
               margin-bottom: 3%;
-            ">
+            "
+          >
             INSIDE DAYS</b
           >
 
@@ -555,7 +607,8 @@
               font-weight: 800;
               margin-bottom: 3%;
               text-align: center;
-            ">
+            "
+          >
             INSIDE DAYS</b
           >
 
@@ -567,7 +620,8 @@
               font-weight: 300;
               font-size: 15pt;
               text-align: justify;
-            ">
+            "
+          >
             The Inside Days will take place in xx and xx during a week
             previously agreed upon with BEST. Students apply for an Inside Day
             during that week. However, the specific day and conditions of each
@@ -590,7 +644,8 @@
               align-items: center;
               font-size: 10pt;
               text-align: justify;
-            ">
+            "
+          >
             The Inside Days will take place in xx and xx during a week
             previously agreed upon with BEST. Students apply for an Inside Day
             during that week. However, the specific day and conditions of each
@@ -611,12 +666,14 @@
           class="mobile-only"
           style="width: 80vw; margin: 10%"
           src="./images/BIV/Mask groupbiv5.png"
-          alt="3" />
+          alt="3"
+        />
       </div>
 
       <div
         class="wide-screen-only container-fluid elipsebiv text-white"
-        style="margin: 10vh; border-radius: 20px; background-color: #418b56">
+        style="margin: 10vh; border-radius: 20px; background-color: #418b56"
+      >
         <div style="height: 3vh"></div>
         <b style="text-align: justify; margin-left: 5%; font-size: 25pt">
           Applying Phase</b
@@ -628,7 +685,8 @@
             margin-left: 5%;
             margin-right: 5%;
             font-size: 15pt;
-          ">
+          "
+        >
           The first phase of applications for the Inside Days will take place on
           the day of the Opening Ceremony, with any remaining spots moving to a
           second phase of applications. The matching between students and
@@ -641,11 +699,13 @@
 
       <div
         class="mobile-only container-fluid elipsebiv text-white"
-        style="margin: 5vh; border-radius: 20px; background-color: #418b56">
+        style="margin: 5vh; border-radius: 20px; background-color: #418b56"
+      >
         <div style="height: 3vh"></div>
         <b
           class="mobile-only"
-          style="text-align: justify; margin-left: 5%; font-size: 20pt">
+          style="text-align: justify; margin-left: 5%; font-size: 20pt"
+        >
           Applying Phase</b
         >
         <div style="height: 3vh"></div>
@@ -655,7 +715,8 @@
             margin-left: 5%;
             margin-right: 5%;
             font-size: 10pt;
-          ">
+          "
+        >
           The first phase of applications for the Inside Days will take place on
           the day of the Opening Ceremony, with any remaining spots moving to a
           second phase of applications. The matching between students and
@@ -672,17 +733,14 @@
           margin-left: 5%;
           font-size: 20pt;
           color: #052720;
-        ">
+        "
+      >
         Porquê criar uma pareceria com o BEST?</b
       >
       <b
         class="mobile-only"
-        style="
-          text-align: justify;
-          margin: 8%;
-          font-size: 25pt;
-          color: #052720;
-        ">
+        style="text-align: justify; margin: 8%; font-size: 25pt; color: #052720"
+      >
         Porquê criar uma pareceria com o BEST?</b
       >
 
@@ -694,7 +752,8 @@
             margin-right: 70%;
             border-radius: 20px;
             background-color: #03604d;
-          ">
+          "
+        >
           <div style="height: 3vh"></div>
           <b style="margin-left: 5%; font-size: 20pt; text-align: justify">
             MEET THE
@@ -710,7 +769,8 @@
               margin-right: 5%;
               font-size: 10pt;
               text-align: justify;
-            ">
+            "
+          >
             The students participating in BIV are interested and proactive in
             discovering the opportunities the job market has to offer, as well
             as in expanding their professional network. The Opening Ceremony is
@@ -729,7 +789,8 @@
             margin-top: -28%;
             border-radius: 20px;
             background-color: #063229;
-          ">
+          "
+        >
           <div style="height: 3vh"></div>
           <b style="margin-left: 5%; font-size: 20pt; text-align: justify">
             PROMOTION</b
@@ -741,7 +802,8 @@
               margin-right: 5%;
               font-size: 10pt;
               text-align: justify;
-            ">
+            "
+          >
             Make your company known on campus. All packages include several
             posts on social media and the presence of your company's logo on the
             posters that we will place throughout the entire Técnico.
@@ -758,14 +820,16 @@
               margin-top: -38%;
               border-radius: 25px;
             "
-            src="images/BIV/parceirosBIV.png" />
+            src="images/BIV/parceirosBIV.png"
+          />
         </div>
       </div>
 
       <div class="mobile-only">
         <div
           class="container-fluid text-white"
-          style="margin: 5%; border-radius: 20px; background-color: #03604d">
+          style="margin: 5%; border-radius: 20px; background-color: #03604d"
+        >
           <div style="height: 3vh"></div>
           <b style="margin-left: 5%; font-size: 20pt; text-align: justify">
             MEET THE
@@ -780,7 +844,8 @@
               margin-right: 5%;
               font-size: 10pt;
               text-align: justify;
-            ">
+            "
+          >
             The students participating in BIV are interested and proactive in
             discovering the opportunities the job market has to offer, as well
             as in expanding their professional network. The Opening Ceremony is
@@ -792,7 +857,8 @@
 
         <div
           class="container-fluid text-white"
-          style="margin: 5%; border-radius: 20px; background-color: #063229">
+          style="margin: 5%; border-radius: 20px; background-color: #063229"
+        >
           <div style="height: 3vh"></div>
           <b style="margin-left: 5%; font-size: 20pt; text-align: justify">
             PROMOTION</b
@@ -804,7 +870,8 @@
               margin-right: 5%;
               font-size: 10pt;
               text-align: justify;
-            ">
+            "
+          >
             Make your company known on campus. All packages include several
             posts on social media and the presence of your company's logo on the
             posters that we will place throughout the entire Técnico.
@@ -815,38 +882,45 @@
         <div>
           <img
             style="width: 85%; margin: 7%; border-radius: 25px"
-            src="images/BIV/parceirosbivmobile.png" />
+            src="images/BIV/parceirosbivmobile.png"
+          />
         </div>
       </div>
 
       <div
         id="packages"
         class="container-fluid text-white"
-        style="background-color: #063229">
+        style="background-color: #063229"
+      >
         <div style="height: 5vh"></div>
         <b
           class="wide-screen-only"
-          style="margin-left: 6%; font-size: 40pt; text-align: justify">
+          style="margin-left: 6%; font-size: 40pt; text-align: justify"
+        >
           OUR PACKAGES</b
         >
         <b
           class="mobile-only"
-          style="margin-top: -5%; font-size: 30pt; text-align: center">
+          style="margin-top: -5%; font-size: 30pt; text-align: center"
+        >
           OUR PACKAGES</b
         >
         <div class="mobile-only" style="height: 5vh"></div>
         <img
           class="wide-screen-only"
           style="width: 45%; margin: 5%; margin-top: 5%"
-          src="images/BIV/Packagesbiv1.png" />
+          src="images/BIV/Packagesbiv1.png"
+        />
         <img
           class="wide-screen-only"
           style="width: 40%; margin: 5%; margin-left: 55%; margin-top: -40%"
-          src="images/BIV/Packagesbiv2.png" />
+          src="images/BIV/Packagesbiv2.png"
+        />
         <img
           class="mobile-only"
           style="width: 80%; margin-left: 10%; margin-top: 0%"
-          src="images/BIV/Packagesbiv2.png" />
+          src="images/BIV/Packagesbiv2.png"
+        />
         <div style="height: 20vh"></div>
       </div>
       <!--
@@ -991,7 +1065,8 @@
             #418b56 0%,
             rgba(67, 83, 163, 0) 50%
           );
-      ">
+      "
+    >
       <h2 style="color: white">OUR TEAM</h2>
       <div class="carousel-container">
         <div class="cards-wrapper">
@@ -1000,7 +1075,8 @@
               <div class="image-content">
                 <img
                   src="images/people/Catarina Dias.png"
-                  alt="Catarina Dias" />
+                  alt="Catarina Dias"
+                />
               </div>
             </div>
             <div class="text-content">
@@ -1010,7 +1086,8 @@
               <button
                 class="contact-btn"
                 style="background-color: #418b56"
-                onclick="copyEmail('catarina.dias@best-eu.org')">
+                onclick="copyEmail('catarina.dias@best-eu.org')"
+              >
                 <img src="images/Icon mail.png" alt="link icon" />
                 catarina.dias@best-eu.org
               </button>
@@ -1022,7 +1099,8 @@
               <div class="image-content">
                 <img
                   src="images/people/Henrique Cavaco.png"
-                  alt="Henrique Cavaco" />
+                  alt="Henrique Cavaco"
+                />
               </div>
             </div>
             <div class="text-content">
@@ -1032,7 +1110,8 @@
               <button
                 class="contact-btn"
                 style="background-color: #418b56"
-                onclick="copyEmail('henrique.cavaco@best-eu.org')">
+                onclick="copyEmail('henrique.cavaco@best-eu.org')"
+              >
                 <img src="images/Icon mail.png" alt="link icon" />
                 henrique.cavaco@best-eu.org
               </button>
@@ -1052,7 +1131,8 @@
               <button
                 class="contact-btn"
                 style="background-color: #418b56"
-                onclick="copyEmail('lia.neves@best-eu.org')">
+                onclick="copyEmail('lia.neves@best-eu.org')"
+              >
                 <img src="images/Icon mail.png" alt="link icon" />
                 lia.neves@best-eu.org
               </button>
@@ -1072,7 +1152,8 @@
               <button
                 class="contact-btn"
                 style="background-color: #418b56"
-                onclick="copyEmail('rita.graca@best-eu.org')">
+                onclick="copyEmail('rita.graca@best-eu.org')"
+              >
                 <img src="images/Icon mail.png" alt="link icon" />
                 rita.graca@best-eu.org
               </button>
@@ -1084,7 +1165,8 @@
               <div class="image-content">
                 <img
                   src="images/people/Margarida Jardim.png"
-                  alt="Margarida Jardim" />
+                  alt="Margarida Jardim"
+                />
               </div>
             </div>
             <div class="text-content">
@@ -1094,7 +1176,8 @@
               <button
                 class="contact-btn"
                 style="background-color: #418b56"
-                onclick="copyEmail('margarida.jardim@best-eu.org')">
+                onclick="copyEmail('margarida.jardim@best-eu.org')"
+              >
                 <img src="images/Icon mail.png" alt="link icon" />
                 margarida.jardim@best-eu.org
               </button>
@@ -1105,17 +1188,17 @@
     </div>
     <script>
       function copyEmail(email) {
-        const textArea = document.createElement('textarea');
+        const textArea = document.createElement("textarea");
         textArea.value = email;
         document.body.appendChild(textArea);
-        textArea.style.position = 'fixed'; // Avoid scrolling to bottom
-        textArea.style.opacity = '0';
+        textArea.style.position = "fixed"; // Avoid scrolling to bottom
+        textArea.style.opacity = "0";
         textArea.select();
         try {
-          document.execCommand('copy');
-          alert('Email copied to clipboard: ' + email);
+          document.execCommand("copy");
+          alert("Email copied to clipboard: " + email);
         } catch (err) {
-          console.error('Could not copy text: ', err);
+          console.error("Could not copy text: ", err);
         }
         document.body.removeChild(textArea);
       }
@@ -1125,37 +1208,45 @@
       <div class="bg-white text-center lg:text-left">
         <div class="container px-20 text-gray-600 mx-auto p-6">
           <div
-            class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400">
+            class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400"
+          >
             <div class="my-6 md:mb-0">
               <div class="text-center md:text-left">
                 <h3 class="text-xl font-semibold my-4">Contact us</h3>
                 <a
                   class="flex items-center space-x-2"
-                  href="mailto:lisbon@best-eu.org">
+                  href="mailto:lisbon@best-eu.org"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5 inline"
                     viewBox="0 0 20 20"
-                    fill="currentColor">
+                    fill="currentColor"
+                  >
                     <path
-                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
                     <path
-                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
                   </svg>
                   <p>lisbon@best-eu.org</p>
                 </a>
                 <a
                   class="flex items-center space-x-2"
-                  href="https://goo.gl/maps/tkWRJizZUSAqjceX6">
+                  href="https://goo.gl/maps/tkWRJizZUSAqjceX6"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5"
                     viewBox="0 0 20 20"
-                    fill="currentColor">
+                    fill="currentColor"
+                  >
                     <path
                       fill-rule="evenodd"
                       d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                      clip-rule="evenodd" />
+                      clip-rule="evenodd"
+                    />
                   </svg>
                   <p>Avenida Rovisco Pais, 1049-001 Lisboa, Portugal</p>
                 </a>
@@ -1164,42 +1255,51 @@
             <div class="hidden lg:block my-6 md:mb-0">
               <div class="">
                 <div
-                  class="flex lg:flex lg:flex-row-reverse items-center gap-x-5">
+                  class="flex lg:flex lg:flex-row-reverse items-center gap-x-5"
+                >
                   <a
                     href="https://www.best.eu.org/courses/list.jsp"
-                    class="flex-none">
+                    class="flex-none"
+                  >
                     <img
                       src="./images/logos/courses.png"
                       alt="best courses"
-                      class="w-28 hover:scale-105 transition-transform" />
+                      class="w-28 hover:scale-105 transition-transform"
+                    />
                   </a>
                   <a
                     href="https://best.tecnico.ulisboa.pt/insideview/"
                     class="flex-none"
-                    style="margin: 10p">
+                    style="margin: 10p"
+                  >
                     <img
                       src="./images/logos/BIV_newlogo_blue.png"
                       alt="best inside view"
-                      class="w-16 hover:scale-105 transition-transform" />
+                      class="w-16 hover:scale-105 transition-transform"
+                    />
                   </a>
                   <a
                     href="https://best.tecnico.ulisboa.pt/bee/"
                     class="flex-none"
-                    style="margin: -20px">
+                    style="margin: -20px"
+                  >
                     <img
                       src="./images/logos/logoinicialbee.png"
                       alt="bee lisbon"
-                      class="w-40 hover:scale-105 transition-transform" />
+                      class="w-40 hover:scale-105 transition-transform"
+                    />
                   </a>
                   <a
                     href="https://best.tecnico.ulisboa.pt/bite24/"
                     class="flex-none"
-                    style="margin: -45px">
+                    style="margin: -45px"
+                  >
                     <img
                       src="./images/logos/logo_bite.png"
                       alt="bee lisbon"
                       class="w-42 hover:scale-105 transition-transform"
-                      style="margin-right: 7pt" />
+                      style="margin-right: 7pt"
+                    />
                   </a>
                 </div>
               </div>
